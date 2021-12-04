@@ -1,3 +1,5 @@
+
+
 document.querySelector('.busca').addEventListener('submit',async (event)=>{
     event.preventDefault();
 
@@ -37,7 +39,6 @@ function clearInfo(){
 function showInfo(json){
     showWarning('')
 
-    
     document.querySelector('.titulo').innerHTML = `${json.name}, ${json.country}`
     document.querySelector('.tempInfo').innerHTML = `${json.temp} <sup>ºC</sup>`
     document.querySelector('.ventoInfo').innerHTML = `${json.windSpeed} <span>km/h</span>`
